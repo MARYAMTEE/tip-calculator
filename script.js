@@ -7,8 +7,8 @@ const billInput = document.querySelector("#bill");
 const peopleInput = document.querySelector("#people");
 const tipButtons = document.querySelectorAll(".tip-btn");
 const customTipInput = document.querySelector("#custom-tip");
-const tipAmountDisplay = document.querySelector(".tip-amount");
-const totalAmountDisplay = document.querySelector(".total-amount");
+const tipAmountDisplay = document.querySelector("#tip-amount");
+const totalAmountDisplay = document.querySelector("#total-amount");
 
 //Reusable calculate function
 function calculate(){
