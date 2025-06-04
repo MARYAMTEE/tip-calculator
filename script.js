@@ -61,3 +61,27 @@ customTipInput.addEventListener("input", () => {
     tipValue = parseFloat(customTipInput.value);
     calculate();
 });
+
+//Reset button
+const resetBtn = document.querySelector(".reset-btn");
+resetBtn.addEventListener("click", () => {
+    //Reset global variable
+    let bill = 0;
+    let tipValue = 0;
+    let people = 1;
+
+    //clear inputs
+    billInput.value = "";
+    peopleInput.value = "";
+    customTipInput.value = "";
+
+    // Remove active state from tip buttons
+    tipButtons.forEach(btn => btn.classList.remove("active"));
+
+    // Reset displays
+    tipAmountDisplay.textContent = '0.00';
+    totalAmountDisplay.textContent = '0.00';
+
+    errorMessage.style.display = "none";
+
+})
