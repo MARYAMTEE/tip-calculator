@@ -124,18 +124,29 @@ input{
 .tip-container-two p, .amount-container p{
     color: var(--grey-500);
     font-weight: bold;
-    padding: 5px 0;
+    font-size: 18px;
+}
+
+.tip-container-two h2, .amount-container h2{
+    font-size: 18px;
 }
 
 .tip-amount, .total-amount{
-    display: flex;
+    display: inline-flex;
     align-items: center;
+    gap: 0.2rem;
 }
 
-.tip-amount span, .total-amount span,
-.tip-amount img, .total-amount img
-{
+
+.tip-amount span, .total-amount span {
     color: var(--green-400);
     font-weight: 700;
-    font-size: 50px;
+    font-size: 3rem;
+}
+
+
+.tip-amount i, .total-amount i{
+    color: var(--green-400);
+    font-size: 2rem;
+    transform: translateY(2px);
 }
