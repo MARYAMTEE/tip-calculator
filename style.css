@@ -25,15 +25,82 @@ body{
     font-size: 16px;
 }
 
+/* General styling for all inputs */
+
+input{
+    color: var(--green-900);
+    width: 100%;
+    height: 40px;
+    padding: 10px 10px 10px 35px;
+    text-align: right;
+    outline: none;
+    border: none;
+    background-color: var(--grey-50);
+    font-size: 1.5rem;
+    font-weight: 700;
+    border-radius: 5px;
+    font-family: "Space Mono", monospace;
+}
+
 .container-tip-calculator{
     background-color: var(--white);
     width: 100%;
     border-radius: 30px;
-    padding: 20px;
+    padding: 30px;
 }
 
 .container-tip-calculator h1{
     font-size: 14px;
     color: var(--grey-500);
     font-weight: 600;
+}
+
+.bill-container, .tip-container, .people-container{
+    margin-bottom: 25px;
+}
+/* Positioning the icons in the input */
+
+.bill-input, .people-input{
+    position: relative;
+    padding: 10px 0;
+}
+
+.dollar-sign, .user-icon{
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+
+/* buttons */
+.tip-options{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    padding: 10px 0;
+}
+
+.tip-btn{
+    background-color: var(--green-900);
+    color: var(--grey-50);
+    font-weight: 700;
+    border: none;
+    outline: none;
+    padding: 0.7rem 3rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: "Space Mono", monospace;
+    border-radius: 5px;
+    flex: 1;
+}
+
+#custom-tip{
+    height: 3.5rem;
+    flex: 1;
+}
+
+#custom-tip input:focus{
+    outline: 3px solid var(--green-900);
 }
