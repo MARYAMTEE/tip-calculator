@@ -108,29 +108,8 @@ input{
 .container-right{
     background-color: var(--green-900);
     color: white;
-    display: flex;
-    align-items: center;
     padding: 30px;
     border-radius: 30px;
-    justify-content: space-between;
-}
-
-.amount-per-person p, .total-per-amount p{
-    color: var(--grey-500);
-    font-weight: bold;
-}
-
-/* working with the dollar sign  */
-.tip-amount, .total-amount{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#total-amount, #tip-amount{
-    color: var(--green-400);
-    font-weight: 700;
-    font-size: 45px;
 }
 
 
