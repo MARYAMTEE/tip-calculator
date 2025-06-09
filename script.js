@@ -65,10 +65,6 @@ customTipInput.addEventListener("input", () => {
 //Reset button
 const resetBtn = document.querySelector(".reset-btn");
 resetBtn.addEventListener("click", () => {
-    //Reset global variable
-    let bill = 0;
-    let tipValue = 0;
-    let people = 1;
 
     //clear inputs
     billInput.value = "";
@@ -84,4 +80,8 @@ resetBtn.addEventListener("click", () => {
 
     errorMessage.style.display = "none";
 
+    //Reset global variable
+    bill = 0;
+    tipValue = 0;
+    people = 1;
 })

@@ -45,7 +45,8 @@ input{
 .container-tip-calculator{
     background-color: var(--white);
     width: 100%;
-    border-radius: 30px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
     padding: 30px;
 }
 
@@ -99,6 +100,11 @@ input{
     flex: 1;
 }
 
+button.active{
+    background-color: var(--green-400);
+    color: var(--green-900);
+}
+
 #custom-tip{
     height: 3.5rem;
     flex: 1;
@@ -140,13 +146,11 @@ input{
     gap: 0.2rem;
 }
 
-
 .tip-amount span, .total-amount span {
     color: var(--green-400);
     font-weight: 700;
     font-size: 2.5rem;
 }
-
 
 .tip-amount i, .total-amount i{
     color: var(--green-400);
