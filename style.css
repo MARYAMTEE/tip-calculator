@@ -42,6 +42,10 @@ input{
     font-family: "Space Mono", monospace;
 }
 
+input:focus{
+    border: 3px solid var(--green-400);
+}
+
 .container-tip-calculator{
     background-color: var(--white);
     width: 100%;

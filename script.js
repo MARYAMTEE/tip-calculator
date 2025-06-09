@@ -10,6 +10,7 @@ const customTipInput = document.querySelector("#custom-tip");
 const tipAmountDisplay = document.querySelector("#tip-amount");
 const totalAmountDisplay = document.querySelector("#total-amount");
 
+
 //Reusable calculate function
 function calculate(){
     if(bill > 0 && people > 0){
