@@ -58,8 +58,11 @@ input{
 .bill-container, .tip-container, .people-container{
     margin-bottom: 25px;
 }
-/* Positioning the icons in the input */
 
+.logo-image{
+    padding: 50px 0;
+}
+/* Positioning the icons in the input */
 .bill-input, .people-input{
     position: relative;
     padding: 10px 0;
@@ -124,7 +127,7 @@ input{
 .tip-container-two p, .amount-container p{
     color: var(--grey-500);
     font-weight: bold;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .tip-container-two h2, .amount-container h2{
@@ -141,7 +144,7 @@ input{
 .tip-amount span, .total-amount span {
     color: var(--green-400);
     font-weight: 700;
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 
 
@@ -149,4 +152,18 @@ input{
     color: var(--green-400);
     font-size: 2rem;
     transform: translateY(2px);
+}
+
+/* Reset Butto */
+.reset-btn{
+    border: none;
+    outline: none;
+    background-color: var(--green-400);
+    color: var(--green-900);
+    font-family: "Space Mono", monospace;
+    font-weight: 700;
+    font-size: 1.2rem;
+    width: 100%;
+    height: 3rem;
+    border-radius: 5px;
 }
