@@ -51,6 +51,18 @@ input:hover{
     border: 3px solid var(--grey-200);
 }
 
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
 .container-tip-calculator{
     width: 100%;
     padding: 30px;
@@ -107,11 +119,13 @@ input:hover{
     font-family: "Space Mono", monospace;
     border-radius: 5px;
     flex: 1;
+    cursor: pointer;
 }
 
 .tip-btn:hover{
     background-color: var(--grey-200);
     color: var(--green-900);
+    transition: 0.5s ease-in;
 }
 
 button.active{
@@ -122,10 +136,6 @@ button.active{
 #custom-tip{
     height: 3.5rem;
     flex: 1;
-}
-
-#custom-tip input:focus{
-    outline: 3px solid var(--green-900);
 }
 
 .container-right{
@@ -184,10 +194,12 @@ button.active{
     width: 100%;
     height: 3rem;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .reset-btn:hover{
     background-color: var(--grey-200);
+    transition: all 0.3s ease-in;
 }
 
 @media (min-width: 768px){
