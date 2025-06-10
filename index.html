@@ -19,82 +19,85 @@
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="logo-image">
-        <img src="./images/logo.svg" alt="Logo image">
-    </div>
-    
-    <div class="container-tip-calculator">
-        <section class="left">
-            <div class="container-left">
-                <div class="bill-container">
-                    <h1>Bill</h1>
-                    <div class="bill-input">
-                        <i class="fa-solid fa-dollar-sign dollar-sign"></i>
-                        
-                        <input type="number" name="bill" id="bill" placeholder="0">
-                    </div>
-                </div>
+    <header>
+        <div class="logo-image">
+            <img src="./images/logo.svg" alt="Logo image">
+        </div>
+    </header>
 
-                <div class="tip-container">
-                    <h1>Select Tip %</h1>
-                    <div class="tip-options">
-                        <button class="tip-btn" data-tip="5">5%</button>
-                        <button class="tip-btn" data-tip="10">10%</button>
-                        <button class="tip-btn" data-tip="15">15%</button>
-                        <button class="tip-btn" data-tip="25">25%</button>
-                        <button class="tip-btn" data-tip="50">50%</button>
-                        <input type="number" id="custom-tip" placeholder="Custom">
-                    </div>
-                </div>
-
-                <div class="people-container">
-                    <div class="heading-wrapper">
-                        <h1>Number of People</h1>
-                        <span id="error-message"></span>
-                    </div>
-                    <div class="people-input">
-                        <img src="./images/icon-person.svg" alt="Person Icon" class="user-icon">
-                        <input type="number" name="people" id="people" placeholder="0">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="right">
-            <div class="container-right">
-                <div class="tip-container-two">
-                    <div class="tip-txt">
-                        <h2>Tip Amount</h2>
-                        <p>/ person</p>
+    <main>
+        <div class="container-tip-calculator">
+            <section class="left">
+                <div class="container-left">
+                    <div class="bill-container">
+                        <h1>Bill</h1>
+                        <div class="bill-input">
+                            <i class="fa-solid fa-dollar-sign dollar-sign"></i>
+                            
+                            <input type="number" name="bill" id="bill" placeholder="0">
+                        </div>
                     </div>
 
-                    <div class="tip-per-person">
-                    <span class="tip-amount">
-                        <i class="fa-solid fa-dollar-sign"></i>
-                        <span id="tip-amount">0.00</span>
-                    </span>
-                    </div>
-                </div>
-                <div class="amount-container">
-                    <div class="total-amount-txt">
-                        <h2>Total</h2>
-                        <p>/ person</p>
+                    <div class="tip-container">
+                        <h1>Select Tip %</h1>
+                        <div class="tip-options">
+                            <button class="tip-btn" data-tip="5">5%</button>
+                            <button class="tip-btn" data-tip="10">10%</button>
+                            <button class="tip-btn" data-tip="15">15%</button>
+                            <button class="tip-btn" data-tip="25">25%</button>
+                            <button class="tip-btn" data-tip="50">50%</button>
+                            <input type="number" id="custom-tip" placeholder="Custom">
+                        </div>
                     </div>
 
-                    <div class="total-per-person">
-                    <span class="total-amount">
-                        <i class="fa-solid fa-dollar-sign"></i>
-                        <span id="total-amount">0.00</span>
-                    </span>
+                    <div class="people-container">
+                        <div class="heading-wrapper">
+                            <h1>Number of People</h1>
+                            <span class="error-message"></span>
+                        </div>
+                        <div class="people-input">
+                            <img src="./images/icon-person.svg" alt="Person Icon" class="user-icon">
+                            <input type="number" name="people" id="people" placeholder="0">
+                        </div>
                     </div>
                 </div>
+            </section>
 
-                <div class="resetBtn">
-                    <button class="reset-btn">RESET</button>
+            <section class="right">
+                <div class="container-right">
+                    <div class="tip-container-two">
+                        <div class="tip-txt">
+                            <h2>Tip Amount</h2>
+                            <p>/ person</p>
+                        </div>
+
+                        <div class="tip-per-person">
+                        <span class="tip-amount">
+                            <i class="fa-solid fa-dollar-sign"></i>
+                            <span id="tip-amount">0.00</span>
+                        </span>
+                        </div>
+                    </div>
+                    <div class="amount-container">
+                        <div class="total-amount-txt">
+                            <h2>Total</h2>
+                            <p>/ person</p>
+                        </div>
+
+                        <div class="total-per-person">
+                        <span class="total-amount">
+                            <i class="fa-solid fa-dollar-sign"></i>
+                            <span id="total-amount">0.00</span>
+                        </span>
+                        </div>
+                    </div>
+
+                    <div class="resetBtn">
+                        <button class="reset-btn">RESET</button>
+                    </div>
                 </div>
-            </div>
-            
-        </section>
-    </div>
+            </section>
+        </div>
+    </main>
 </body>
 </html>

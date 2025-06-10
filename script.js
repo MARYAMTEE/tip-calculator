@@ -28,7 +28,7 @@ billInput.addEventListener('input', () => {
   calculate();
 });
 
-const errorMessage = document.querySelector("#error-message");
+const errorMessage = document.querySelector(".error-message");
 // When People input changes
 peopleInput.addEventListener("input", ()=> {
     people = parseInt(peopleInput.value);
