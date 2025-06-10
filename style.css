@@ -15,7 +15,6 @@
 }
 
 body{
-    background-color: var(--grey-200);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,6 +23,7 @@ body{
     color: var(--green-900);
     font-size: 1rem;
     height: 100%;
+    background-color: var(--grey-200);
 }
 
 /* General styling for all inputs */
@@ -49,6 +49,11 @@ input:focus{
 
 input:hover{
     border: 3px solid var(--grey-200);
+    transition: all 0.3s ease-in-out;
+}
+
+input::placeholder{
+    color: var(--grey-400);
 }
 
 /* Chrome, Safari, Edge, Opera */
@@ -77,12 +82,24 @@ input[type="number"] {
     font-weight: 600;
 }
 
+.heading-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#error-message {
+    color: red;
+    font-weight: 600;
+}
+
+
 .bill-container, .tip-container, .people-container{
     margin-bottom: 25px;
 }
 
 .logo-image{
-    padding: 50px 0;
+    padding: 50px;
 }
 /* Positioning the icons in the input */
 .bill-input, .people-input{
@@ -96,6 +113,7 @@ input[type="number"] {
     top: 50%;
     transform: translateY(-50%);
     pointer-events: none;
+    color: var(--grey-400);
 }
 
 
@@ -208,6 +226,12 @@ button.active{
         width: 100%;
         height: 100vh;
     }
+
+    .logo-image{
+        margin: 0;
+        padding: 0;
+        padding-bottom: 30px;
+    }
     
     .container-tip-calculator{
         display: flex;
@@ -249,12 +273,14 @@ button.active{
 @media (min-width: 900px){
     
     body{
-        width: 100%;
+        padding-bottom: 20px;
         height: 100vh;
     }
 
     .logo-image{
-    padding-bottom: 50px;
+        margin: 0;
+        padding: 0;
+        padding-bottom: 30px;
     }
     
     .container-tip-calculator{
@@ -263,7 +289,6 @@ button.active{
         align-items: center;
         width: 100%;
         max-width: 60rem;
-        height: fit-content;
         gap: 1.5rem;
         border-radius: 30px;
     }
